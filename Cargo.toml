@@ -1,0 +1,15 @@
+[package]
+name = "rust-aes-tool"
+version = "0.1.0"
+edition = "2021"
+description = "AES-256-GCM file encryption CLI"
+license = "MIT"
+
+[[bin]]
+name = "aes-tool"
+path = "src/main.rs"
+
+[dependencies]
+aes-gcm = "0.10"
+clap = { version = "4.0", features = ["derive"] }
+base64 = "0.21"
